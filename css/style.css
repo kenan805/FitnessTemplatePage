@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat&family=Open+Sans:wght@400;700&family=Roboto&display=swap');
+:root {
+    --red: #fd634d;
+    --green: #a1c927;
+    --black: #0c1119
+}
+header {
+    height: 100vh;
+    background: url('../img/headerbg.jpg') center/cover;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+#menu {
+    padding: 20px 0 0 0;
+}
+#menu li a {
+    font: .8em Fredoka, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+#title {
+    position: absolute;
+    left: 6vw;
+    bottom: 15vh;
+}
+h1, h2, h4, h5, h6 { text-transform: uppercase }
+h1 { font: 2em Fredoka, sans-serif }
+h2 { font: 2em 'Open Sans', sans-serif }
+h3 {
+    font: 1.5em 'Open Sans', sans-serif;
+    padding: 0 0 26px 0;
+}
+h5 {
+    font: bold 1em 'Open Sans', sans-serif ;
+    letter-spacing: 3px;
+    text-align: right;
+    padding-right: 50px;
+}
+h6 { 
+    font: 600 .9em Montserrat;
+    letter-spacing: 1px;
+}
+#artcol article { padding: 20px; }
+#artcol article i { 
+    font-size: 2em;
+    padding: 0 0 22px 0;
+}
+#artcol article p, #artcol article a {
+    font: .8em Roboto, sans-serif;
+    line-height: 24px;
+    padding: 0 0 25px 0;
+}
+#fitness { background: url('../img/fitness.jpg') center/cover }
+#body { background: url('../img/body.jpg') center/cover }
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover }
+#summer { background: url('../img/summer.jpg') center/cover }
+#grap { background: url('../img/grape.jpg') center/cover }
+#avokado { background: url('../img/avokado.jpg') center/cover }
+
+.container { 
+    max-width: 1180px;
+    margin: auto;    
+}
+.bgwhite p {
+    font: 14px 'Open Sans', sans-serif ;
+    line-height: 26px;
+    color: #656e74;
+    padding-bottom: 15px;
+}
+.bgred { background-color: var(--red) }
+.bggreen { background-color: var(--green) }
+.bgwhite { background-color: #fff }
+.bgblack { background-color: var(--black) }
+.txtred { color: var(--red) }
+.txtgreen { color: var(--green) }
+.txtwhite { color: #fff }
+.vh50 { min-height: 50vh }
+.artpadding { padding: 70px 40px 0 40px }
+.center { text-align: center }
+
+.bggreen div article i { 
+    font-size: 22px ;
+    padding: 22px 0;
+    color: #e3e9ea; 
+}
+.container div:nth-of-type(2) a {
+    text-decoration: underline;
+}
+.fa-user {
+    font-size: 30px;
+    color: #e3e9ea; 
+}
+.bgred .bgwhite i, .fa-tint:last-of-type {
+    font-size: 40px;
+    color: #e3e9ea; 
+}
+.bgred .bgwhite h2 {
+    padding-bottom: 40px;
+}
+.bgred .bggreen h2 {
+    padding: 0 0 30px 0;
+}
+.bgred .bggreen p {
+    font: 13px 'Open Sans', sans-serif ;
+    line-height: 21px;
+    color: #fff;
+}
+.fb-color { color: #2e3092 }
+.twt-color { color: #00adef }
+.ytb-color { color: #ed3123 }
+.lin-color { color: #16198f }
+main div:nth-of-type(3) {
+    height: 80vh;
+    background: url('../img/footer.jpg') center/cover ;
+    text-align: center;
+}
+main div:nth-of-type(3) h2 {
+    padding: 200px 5px 25px 5px;
+}
+main div:nth-of-type(3) p {
+    width: 75%;
+    margin: auto;
+    font: 1em 'Open Sans', sans-serif;
+}
+footer {
+    min-height: 70vh;
+    text-align: center;
+}
+
+footer h4 {
+    font: 1em 'Open Sans', sans-serif;
+    padding: 50px 0 20px 0;
+}
+footer p {
+    font: .9em 'Open Sans', sans-serif;
+    color: #8297a7;
+    padding: 0 20px;
+}
+footer i {
+    font-size: 2em;
+    padding-right: 10px;
+}
+footer input, footer button {
+    padding: 15px 20px;
+    margin-right: 6px;
+    border-radius: 5px;
+    margin: 0 20px 10px 20px;
+    width: 90%;
+}
+footer button {
+    font-weight: bold;
+}
+footer button i {
+    font-size: .8em;
+    padding-left: 5px;
+}
+footer div .row:last-of-type div {
+    padding: 30px 0 0 0;
+}
+@media only screen and (min-width: 768px) {
+    header { text-align: inherit }
+    #menu { float: right }
+    #menu li {
+        display: inline-block;
+        margin: 0 1.6vw;
+    }
+    h1 { font-size: 2.5em }
+    #artcol { padding: 80px 0 }
+    #artcol article i { font-size: 2.5em }
+    .row::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .w14 { width: 25% }
+    .w13 { width: 33.33% }
+    .w23 { width: 66.66% }
+    .fleft { float: left }
+    .fright { float: right }
+    main div:nth-of-type(3) h2 { font-size: 2.7em }
+    main div:nth-of-type(3) p { width: 30% }
+    footer { text-align: left }
+    footer p { padding: 0 }
+    footer i { font-size: 2em }
+    footer div div { padding-right: 50px }
+    footer input, footer button {
+        width: auto;
+        margin: 0 5px 0 0;
+    }
+}
